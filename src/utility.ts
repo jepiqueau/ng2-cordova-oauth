@@ -7,6 +7,8 @@ export class OauthUtility {
         }
         if (parameterMap["access_token"] !== undefined && parameterMap["access_token"] !== null) {
             return parameterMap;
+        } else if (parameterMap["code"] !== undefined && parameterMap["code"] !== null) {
+            return parameterMap;        
         } else {
             return null;
         }
